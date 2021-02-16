@@ -93,11 +93,22 @@ ynh_script_progression --message="Configuring system user..." --weight=1
 ynh_system_user_create --username=$app --home_dir=$final_path
 
 #=================================================
+# SPECIFIC SETUP
+#=================================================
+ynh_script_progression --message="tiddlywiki..." --weight=2
+
+pushd $final_path
+	$nodejs_path/node $final_path/tiddlywiki monwiki --init server
+popd
+
+#=================================================
 # SETUP SYSTEMD
 #=================================================
 ynh_script_progression --message="Configuring a systemd service..." --weight=1
 
-ynh_add_systemd_config --others_var=ynh_node_load_PATH
+ynh_replace_string --match_string="__NODEJS_PATH__" --replace_string="$nodejs_path" --target_file="../conf/systemd.service"
+ynh_replace_string --match_string="__port__" --replace_string="$port" --target_file="../conf/systemd.service"
+ynh_add_systemd_config
 
 #=================================================
 # GENERIC FINALIZATION
@@ -107,7 +118,7 @@ ynh_add_systemd_config --others_var=ynh_node_load_PATH
 
 # Set permissions to app files
 chown -R $app: $final_path
-chmod -R 755 $final_path
+chmod-R 755 $final_path
 
 #=================================================
 # ADVERTISE SERVICE IN ADMIN PANEL

@@ -7,10 +7,10 @@ Type=simple
 User=__APP__
 Group=__APP__
 WorkingDirectory=__FINALPATH__
-Environment="NODE_ENV=production"
-Environment="__YNH_NODE_LOAD_PATH__"
-ExecStart=__FINALPATH__/ mywiki --listen port=__port__ authenticated-user-header=basic
+ExecStart=__NODEJS_PATH__/node __FINALPATH__/tiddlywiki monwiki --listen port=__port__ authenticated-user-header=basic
 Restart=always
+Environment=PATH=/usr/bin:/usr/local/bin:__NODEJS_PATH__
+Environment=NODE_ENV=production
 
 [Install]
 WantedBy=multi-user.target
