@@ -38,8 +38,8 @@
                     "en": "Choose a path for TiddlyWiki",
                     "fr": "Choisissez un chemin pour TiddlyWiki"
                 },
-                "example": "/tiddlywiki",
-                "default": "/tiddlywiki"
+                "example": "/",
+                "default": "/"
             },
             {
                 "name": "is_public",
