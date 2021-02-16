@@ -97,9 +97,11 @@ ynh_system_user_create --username=$app --home_dir=$final_path
 #=================================================
 ynh_script_progression --message="tiddlywiki..." --weight=2
 
+chown -R $app: $final_path
+
 pushd $final_path
 	#$nodejs_path/node $final_path/tiddlywiki mywiki --init server
-	ynh_exec_as $app env "$ynh_node_load_PATH" $final_path/tiddlywiki mywiki --init server
+	env "$ynh_node_load_PATH" $final_path/tiddlywiki mywiki --init server
 popd
 
 #=================================================
