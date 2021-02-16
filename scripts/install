@@ -129,7 +129,7 @@ yunohost service add $app --description="Collaborative editor" --log="/var/log/$
 #=================================================
 # START SYSTEMD SERVICE
 #=================================================
-ynh_print_info --message="on demarre le service..."
+ynh_script_progression --message="Starting a systemd service..." --weight=2
 
 ynh_systemd_action --service_name=$app --action=start --log_path=systemd --line_match=""
 
