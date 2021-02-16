@@ -101,7 +101,7 @@ chown -R $app: $final_path
 
 pushd $final_path
 	#$nodejs_path/node $final_path/tiddlywiki mywiki --init server
-	"$ynh_node_load_PATH" $final_path mywiki --init server
+	$ynh_node_load_PATH $final_path mywiki --init server
 popd
 
 #=================================================
@@ -109,7 +109,7 @@ popd
 #=================================================
 ynh_script_progression --message="Configuring a systemd service..." --weight=1
 
-ynh_add_systemd_config --others_var="ynh_node_load_PATH"
+ynh_add_systemd_config --others_var=ynh_node_load_PATH
 
 #=================================================
 # GENERIC FINALIZATION
@@ -134,8 +134,6 @@ yunohost service add $app --description="Collaborative editor" --log="/var/log/$
 ynh_print_info --message="on demarre le service..."
 
 ynh_systemd_action --service_name=$app --action=start --log_path=systemd --line_match=""
-
-sleep 30
 
 #=================================================
 # SETUP SSOWAT
