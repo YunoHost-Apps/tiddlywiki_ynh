@@ -101,7 +101,7 @@ chown -R $app: $final_path
 
 pushd $final_path
 	#$nodejs_path/node $final_path/tiddlywiki mywiki --init server
-	env "$ynh_node_load_PATH" $final_path/tiddlywiki mywiki --init server
+	env "$ynh_node_load_PATH" $final_path mywiki --init server
 popd
 
 #=================================================
