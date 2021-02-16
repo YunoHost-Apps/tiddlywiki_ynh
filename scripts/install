@@ -98,7 +98,7 @@ ynh_system_user_create --username=$app --home_dir=$final_path
 ynh_script_progression --message="tiddlywiki..." --weight=2
 
 pushd $final_path
-	$nodejs_path/node $final_path/tiddlywiki monwiki --init server
+	$ynh_node $final_path/tiddlywiki monwiki --init server
 popd
 
 #=================================================
@@ -106,8 +106,6 @@ popd
 #=================================================
 ynh_script_progression --message="Configuring a systemd service..." --weight=1
 
-ynh_replace_string --match_string="__NODEJS_PATH__" --replace_string="$nodejs_path" --target_file="../conf/systemd.service"
-ynh_replace_string --match_string="__port__" --replace_string="$port" --target_file="../conf/systemd.service"
 ynh_add_systemd_config
 
 #=================================================
@@ -131,7 +129,7 @@ yunohost service add $app --description="Collaborative editor" --log="/var/log/$
 #=================================================
 ynh_script_progression --message="Starting a systemd service..." --weight=2
 
-ynh_systemd_action --service_name=$app --action=start --log_path=systemd --line_match=""
+ynh_systemd_action --service_name=$app --action=start --log_path=systemd --line_match="Started TiddlyWiki: interactive wiki."
 
 #=================================================
 # SETUP SSOWAT
