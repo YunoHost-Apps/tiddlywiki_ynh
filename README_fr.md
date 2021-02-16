@@ -22,6 +22,11 @@ TiddlyWiki est un wiki interactif complet en JavaScript. Il peut être utilisé 
 
 * [Démo officielle](https://tiddlywiki.com/)
 
+## Documentation
+
+ * Documentation officielle : Lien vers la documentation officielle de cette application.
+ * Documentation YunoHost : Si une documentation spécifique est nécessaire, n'hésitez pas à contribuer.
+
 #### Architectures supportées
 
 * x86-64 - [![Build Status](https://ci-apps.yunohost.org/ci/logs/tiddlywiki%40%28Apps%29.svg)](https://ci-apps.yunohost.org/ci/apps/tiddlywiki/)
