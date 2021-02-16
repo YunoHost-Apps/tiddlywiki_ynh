@@ -12,7 +12,7 @@ source /usr/share/yunohost/helpers
 #=================================================
 # LOAD SETTINGS
 #=================================================
-ynh_print_info --message="Loading installation settings..."
+ynh_print_info --message="Loading installation settings..." --weight=1
 
 app=$YNH_APP_INSTANCE_NAME
 
@@ -31,7 +31,7 @@ upgrade_type=$(ynh_check_app_version_changed)
 #=================================================
 # ENSURE DOWNWARD COMPATIBILITY
 #=================================================
-ynh_print_info --message="Ensuring downward compatibility..."
+ynh_print_info --message="Ensuring downward compatibility..." --weight=1
 
 # If final_path doesn't exist, create it
 if [ -z "$final_path" ]; then
@@ -49,7 +49,7 @@ fi
 #=================================================
 # BACKUP BEFORE UPGRADE THEN ACTIVE TRAP
 #=================================================
-ynh_print_info --message="Backing up the app before upgrading (may take a while)..."
+ynh_print_info --message="Backing up the app before upgrading (may take a while)..." --weight=1
 
 # Backup the current version of the app
 ynh_backup_before_upgrade
@@ -66,7 +66,7 @@ ynh_abort_if_errors
 #=================================================
 # STOP SYSTEMD SERVICE
 #=================================================
-ynh_print_info --message="Stopping a systemd service..."
+ynh_print_info --message="Stopping a systemd service..." --weight=1
 
 ynh_systemd_action --service_name=$app --action=stop
 
@@ -85,7 +85,7 @@ fi
 #=================================================
 # NGINX CONFIGURATION
 #=================================================
-ynh_print_info --message="Upgrading NGINX web server configuration..."
+ynh_print_info --message="Upgrading NGINX web server configuration..." --weight=1
 
 # Create a dedicated nginx config
 ynh_add_nginx_config
@@ -93,43 +93,22 @@ ynh_add_nginx_config
 #=================================================
 # UPGRADE DEPENDENCIES
 #=================================================
-ynh_print_info --message="Upgrading dependencies..."
+ynh_print_info --message="Upgrading dependencies..." --weight=1
 
 ynh_install_nodejs --nodejs_version=$nodejs_version
 
 #=================================================
 # CREATE DEDICATED USER
 #=================================================
-ynh_print_info --message="Making sure dedicated system user exists..."
+ynh_print_info --message="Making sure dedicated system user exists..." --weight=1
 
 # Create a dedicated user (if not existing)
 ynh_system_user_create --username=$app --home_dir=$final_path
 
 #=================================================
-# SPECIFIC UPGRADE
-#=================================================
-# MODIFY A CONFIG FILE
-#=================================================
-
-config_file="$final_path/config.yml"
-ynh_backup_if_checksum_is_different --file=$config_file
-cp -f ../conf/config.sample.yml $config_file
-
-ynh_replace_string --match_string="__PORT__" --replace_string="$port" --target_file=$config_file
-ynh_replace_string --match_string="__DB_PWD__" --replace_string="$db_pwd" --target_file=$config_file
-ynh_replace_string --match_string="__DB_NAME__" --replace_string="$db_name" --target_file=$config_file
-
-#=================================================
-# STORE THE CONFIG FILE CHECKSUM
-#=================================================
-
-# Recalculate and store the checksum of the file for the next upgrade.
-ynh_store_file_checksum --file=$config_file
-
-#=================================================
 # SETUP SYSTEMD
 #=================================================
-ynh_print_info --message="Upgrading systemd configuration..."
+ynh_print_info --message="Upgrading systemd configuration..." --weight=1
 
 ynh_add_systemd_config
 
@@ -145,11 +124,9 @@ chown -R $app: $final_path
 #=================================================
 # START SYSTEMD SERVICE
 #=================================================
-ynh_print_info --message="Starting a systemd service..."
+ynh_print_info --message="Starting a systemd service..." --weight=1
 
-ynh_systemd_action --service_name=$app --action="start" --log_path=systemd
-
-sleep 30
+ynh_systemd_action --service_name=$app --action=start --log_path=systemd
 
 #=================================================
 # RELOAD NGINX
@@ -162,4 +139,4 @@ ynh_systemd_action --service_name=nginx --action=reload
 # END OF SCRIPT
 #=================================================
 
-ynh_print_info --message="Upgrade of $app completed"
+ynh_print_info --message="Upgrade of $app completed" --last
