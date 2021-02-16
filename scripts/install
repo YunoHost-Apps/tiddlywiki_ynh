@@ -98,7 +98,7 @@ ynh_system_user_create --username=$app --home_dir=$final_path
 ynh_script_progression --message="Configuring TiddlyWiki..." --weight=2
 
 pushd $final_path
-	$nodejs_path/node $final_path/tiddlywiki monwiki --init server
+	$nodejs_path/node $final_path/tiddlywiki mywiki --init server
 popd
 
 #=================================================
