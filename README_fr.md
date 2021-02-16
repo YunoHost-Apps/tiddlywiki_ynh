@@ -5,17 +5,18 @@
 
 *[Read this readme in english.](./README.md)* 
 
-> *Ce package vous permet d’installer Nullboard rapidement et simplement sur un serveur YunoHost.  
+> *Ce package vous permet d’installer TiddlyWiki rapidement et simplement sur un serveur YunoHost.  
 Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l’installer et en profiter.*
 
 ## Vue d’ensemble
-
+TiddlyWiki est un cahier Web personnel non linéaire que tout le monde peut utiliser et conserver pour toujours, indépendamment de toute entreprise.
+TiddlyWiki est un wiki interactif complet en JavaScript. Il peut être utilisé comme un seul fichier HTML dans le navigateur ou comme une puissante application Node.js.
 
 **Shipped version:** 5.1.23
 
 ## Captures d’écran
 
-![]()
+![](screenshot.png)
 
 ## Démo
 

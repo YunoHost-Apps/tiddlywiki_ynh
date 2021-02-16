@@ -9,18 +9,18 @@
 If you don’t have YunoHost, please see [here](https://yunohost.org/#/install) to know how to install and enjoy it.*
 
 ## Overview
-Welcome to TiddlyWiki, a non-linear personal web notebook that anyone can use and keep forever, independently of any corporation.
+TiddlyWiki is a non-linear personal web notebook that anyone can use and keep forever, independently of any corporation.
 TiddlyWiki is a complete interactive wiki in JavaScript. It can be used as a single HTML file in the browser or as a powerful Node.js application. It is highly customisable: the entire user interface is itself implemented in hackable WikiText.
 
 **Shipped version:** 5.1.23
 
 ## Screenshots
 
-![]()
+![](screenshot.png)
 
 ## Demo
 
-* [Official demo]()
+* [Official demo](https://tiddlywiki.com/)
 
 #### Supported architectures
 
@@ -30,7 +30,7 @@ TiddlyWiki is a complete interactive wiki in JavaScript. It can be used as a sin
 ## Links
 
  * Report a bug: https://github.com/YunoHost-Apps/tiddlywiki_ynh/issues
- * App website: https://tiddlywiki.io/preview
+ * App website: https://tiddlywiki.com/
  * Upstream app repository: https://github.com/Jermolene/TiddlyWiki5
  * YunoHost website: https://yunohost.org/
 

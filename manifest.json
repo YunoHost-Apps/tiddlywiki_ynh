@@ -4,7 +4,7 @@
     "packaging_format": 1,
     "description": {
         "en": "A non-linear personal web notebook",
-        "fr": "a non-linear personal web notebook"
+        "fr": "Un carnet Web personnel non linéaire"
     },
     "version": "5.1.23~ynh1",
     "url": "https://nullboard.io/preview",
