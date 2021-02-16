@@ -24,7 +24,7 @@ ynh_abort_if_errors
 #=================================================
 
 domain=$YNH_APP_ARG_DOMAIN
-path_url=$YNH_APP_ARG_PATH
+path_url="/"
 is_public=$YNH_APP_ARG_IS_PUBLIC
 
 app=$YNH_APP_INSTANCE_NAME
@@ -95,10 +95,10 @@ ynh_system_user_create --username=$app --home_dir=$final_path
 #=================================================
 # SPECIFIC SETUP
 #=================================================
-ynh_script_progression --message="tiddlywiki..." --weight=2
+ynh_script_progression --message="Configuring TiddlyWiki..." --weight=2
 
 pushd $final_path
-	$nodejs_path/node $final_path/tiddlywiki monwiki --init server
+	$nodejs_path/node tiddlywiki monwiki --init server
 popd
 
 #=================================================
