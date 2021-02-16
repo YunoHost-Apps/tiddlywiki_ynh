@@ -8,7 +8,7 @@
     },
     "version": "5.1.23~ynh1",
     "url": "https://nullboard.io/preview",
-    "license": "BSD-2-Clause",
+    "license": "BSD-3-Clause",
     "maintainer": {
         "name": "eric_G",
         "email": ""
