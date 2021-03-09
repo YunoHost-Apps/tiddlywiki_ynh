@@ -47,7 +47,6 @@ ynh_script_progression --message="Storing installation settings..." --weight=1
 
 ynh_app_setting_set --app=$app --key=domain --value=$domain
 ynh_app_setting_set --app=$app --key=path --value=$path_url
-ynh_app_setting_set --app=$app --key=is_public --value=$is_public
 
 #=================================================
 # STANDARD MODIFICATIONS
@@ -123,7 +122,7 @@ chown -R $app: $final_path
 #=================================================
 ynh_script_progression --message="Integrating service in YunoHost..." --weight=3
 
-yunohost service add $app --description="Collaborative editor" --log="/var/log/$app/$app.log"
+yunohost service add $app --description="A non-linear personal web notebook" --log="/var/log/$app/$app.log"
 
 #=================================================
 # START SYSTEMD SERVICE

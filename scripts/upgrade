@@ -18,7 +18,6 @@ app=$YNH_APP_INSTANCE_NAME
 
 domain=$(ynh_app_setting_get --app=$app --key=domain)
 path_url=$(ynh_app_setting_get --app=$app --key=path)
-is_public=$(ynh_app_setting_get --app=$app --key=is_public)
 final_path=$(ynh_app_setting_get --app=$app --key=final_path)
 port=$(ynh_app_setting_get --app=$app --key=port)
 
@@ -124,6 +123,13 @@ ynh_add_systemd_config
 
 # Set permissions on app files
 chown -R $app: $final_path
+
+#=================================================
+# ADVERTISE SERVICE IN ADMIN PANEL
+#=================================================
+ynh_script_progression --message="Integrating service in YunoHost..." --weight=3
+
+yunohost service add $app --description="A non-linear personal web notebook" --log="/var/log/$app/$app.log"
 
 #=================================================
 # START SYSTEMD SERVICE
