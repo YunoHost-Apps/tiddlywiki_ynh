@@ -70,6 +70,14 @@ ynh_print_info --message="Stopping a systemd service..." --weight=1
 ynh_systemd_action --service_name=$app --action=stop
 
 #=================================================
+# CREATE DEDICATED USER
+#=================================================
+ynh_print_info --message="Making sure dedicated system user exists..." --weight=1
+
+# Create a dedicated user (if not existing)
+ynh_system_user_create --username=$app --home_dir=$final_path
+
+#=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
 
@@ -81,6 +89,7 @@ then
 	#ynh_setup_source --dest_dir="$final_path"
 	
 	pushd $final_path
+		ynh_use_nodejs
 		npm update -g tiddlywiki
 	popd
 fi
@@ -99,14 +108,6 @@ ynh_add_nginx_config
 ynh_print_info --message="Upgrading dependencies..." --weight=1
 
 ynh_install_nodejs --nodejs_version=$nodejs_version
-
-#=================================================
-# CREATE DEDICATED USER
-#=================================================
-ynh_print_info --message="Making sure dedicated system user exists..." --weight=1
-
-# Create a dedicated user (if not existing)
-ynh_system_user_create --username=$app --home_dir=$final_path
 
 #=================================================
 # SETUP SYSTEMD

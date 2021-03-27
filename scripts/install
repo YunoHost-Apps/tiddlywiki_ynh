@@ -71,6 +71,14 @@ ynh_script_progression --message="Installing dependencies..."
 ynh_install_nodejs --nodejs_version=$nodejs_version
 
 #=================================================
+# CREATE DEDICATED USER
+#=================================================
+ynh_script_progression --message="Configuring system user..." --weight=1
+
+# Create a system user
+ynh_system_user_create --username=$app --home_dir=$final_path
+
+#=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
 ynh_script_progression --message="Setting up source files..." --weight=1
@@ -88,21 +96,12 @@ ynh_script_progression --message="Configuring NGINX web server..." --weight=1
 ynh_add_nginx_config
 
 #=================================================
-# CREATE DEDICATED USER
-#=================================================
-ynh_script_progression --message="Configuring system user..." --weight=1
-
-# Create a system user
-ynh_system_user_create --username=$app --home_dir=$final_path
-
-#=================================================
 # SPECIFIC SETUP
 #=================================================
 ynh_script_progression --message="Configuring TiddlyWiki..." --weight=2
 
 pushd $final_path
 	ynh_use_nodejs
-	#ynh_npm install -g tiddlywiki
 	npm install -g tiddlywiki
 	tiddlywiki mynewwiki --init server
  popd
