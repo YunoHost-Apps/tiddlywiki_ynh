@@ -9,7 +9,7 @@ Group=__APP__
 WorkingDirectory=__FINALPATH__
 Environment=PATH=__ENV_PATH__
 Environment=NODE_ENV=production
-ExecStart=__YNH_NODE__ mynewwiki --listen port=__PORT__ #authenticated-user-header=basic
+ExecStart=__YNH_NPM__ mynewwiki --listen port=__PORT__ #authenticated-user-header=basic
 Restart=always
 
 [Install]
