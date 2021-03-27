@@ -10,8 +10,6 @@ WorkingDirectory=__FINALPATH__
 Environment=PATH=__ENV_PATH__
 Environment=NODE_ENV=production
 ExecStart=__YNH_NODE__ tiddlywiki mynewwiki --listen port=__PORT__ username=__ADMIN__ password=__PASSWORD__
-StandardOutput=append:/var/log/__APP__/__APP__.log
-StandardError=inherit
 Restart=always
 
 [Install]
