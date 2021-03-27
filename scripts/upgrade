@@ -18,6 +18,7 @@ app=$YNH_APP_INSTANCE_NAME
 domain=$(ynh_app_setting_get --app=$app --key=domain)
 path_url=$(ynh_app_setting_get --app=$app --key=path)
 final_path=$(ynh_app_setting_get --app=$app --key=final_path)
+language=$(ynh_app_setting_get --app=$app --key=language)
 
 #=================================================
 # CHECK VERSION
@@ -34,6 +35,19 @@ ynh_script_progression --message="Ensuring downward compatibility..." --weight=1
 if [ -z "$final_path" ]; then
 	final_path=/var/www/$app
 	ynh_app_setting_set --app=$app --key=final_path --value=$final_path
+fi
+
+# Save the language used if not present
+if [ -z "$language" ]; then
+  language="en"
+  ynh_app_setting_set --app=$app --key=language --value=$language
+fi
+
+# Cleaning legacy permissions
+if ynh_legacy_permissions_exists; then
+	ynh_legacy_permissions_delete_all
+
+	ynh_app_setting_delete --app=$app --key=is_public
 fi
 
 #=================================================
@@ -61,7 +75,12 @@ then
 	# Download, check integrity, uncompress and patch the source from app.src
 	#ynh_setup_source --dest_dir="$final_path"
 	mkdir -p $final_path
+	
+	if [ "$language" = "fr" ]; then
+	cp -a ../sources/empty_fr.html $final_path/empty.html
+	else 
 	cp -a ../sources/empty.html $final_path/empty.html
+	fi
 fi
 
 #=================================================
