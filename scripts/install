@@ -98,7 +98,8 @@ ynh_script_progression --message="Configuring TiddlyWiki..." --weight=2
 
 pushd $final_path
 	ynh_use_nodejs
-	ynh_npm install -g tiddlywiki
+	#ynh_npm install -g tiddlywiki
+	ynh_exec_as $app $ynh_node_load_PATH $ynh_npm install -g tiddlywiki
 	tiddlywiki mynewwiki --init server
  popd
 

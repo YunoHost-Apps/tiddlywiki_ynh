@@ -8,8 +8,7 @@ User=__APP__
 Group=__APP__
 WorkingDirectory=__FINALPATH__
 Environment='NODE_ENV=production'
-Environment="__YNH_NODE_LOAD_PATH__"
-ExecStart=__YNH_NODE_LOAD_PATH__ __FINALPATH__ mynewwiki --listen port=__PORT__ #authenticated-user-header=basic
+ExecStart=__YNH_NODE__ mynewwiki --listen port=__PORT__ #authenticated-user-header=basic
 Restart=always
 
 [Install]
