@@ -12,7 +12,7 @@ source /usr/share/yunohost/helpers
 #=================================================
 # LOAD SETTINGS
 #=================================================
-ynh_print_info --message="Loading installation settings..." --weight=1
+ynh_script_progression --message="Loading installation settings..." --weight=1
 
 app=$YNH_APP_INSTANCE_NAME
 
@@ -30,7 +30,7 @@ upgrade_type=$(ynh_check_app_version_changed)
 #=================================================
 # ENSURE DOWNWARD COMPATIBILITY
 #=================================================
-ynh_print_info --message="Ensuring downward compatibility..." --weight=1
+ynh_script_progression --message="Ensuring downward compatibility..." --weight=1
 
 # If final_path doesn't exist, create it
 if [ -z "$final_path" ]; then
@@ -48,7 +48,7 @@ fi
 #=================================================
 # BACKUP BEFORE UPGRADE THEN ACTIVE TRAP
 #=================================================
-ynh_print_info --message="Backing up the app before upgrading (may take a while)..." --weight=1
+ynh_script_progression --message="Backing up the app before upgrading (may take a while)..." --weight=1
 
 # Backup the current version of the app
 ynh_backup_before_upgrade
@@ -65,14 +65,14 @@ ynh_abort_if_errors
 #=================================================
 # STOP SYSTEMD SERVICE
 #=================================================
-ynh_print_info --message="Stopping a systemd service..." --weight=1
+ynh_script_progression --message="Stopping a systemd service..." --weight=1
 
 ynh_systemd_action --service_name=$app --action=stop
 
 #=================================================
 # CREATE DEDICATED USER
 #=================================================
-ynh_print_info --message="Making sure dedicated system user exists..." --weight=1
+ynh_script_progression --message="Making sure dedicated system user exists..." --weight=1
 
 # Create a dedicated user (if not existing)
 ynh_system_user_create --username=$app --home_dir=$final_path
@@ -83,7 +83,7 @@ ynh_system_user_create --username=$app --home_dir=$final_path
 
 if [ "$upgrade_type" == "UPGRADE_APP" ]
 then
-	ynh_print_info --message="Upgrading source files..."
+	ynh_script_progression --message="Upgrading source files..."
 	
 	pushd $final_path
 		ynh_use_nodejs
@@ -94,7 +94,7 @@ fi
 #=================================================
 # NGINX CONFIGURATION
 #=================================================
-ynh_print_info --message="Upgrading NGINX web server configuration..." --weight=1
+ynh_script_progression --message="Upgrading NGINX web server configuration..." --weight=1
 
 # Create a dedicated nginx config
 ynh_add_nginx_config
@@ -102,14 +102,14 @@ ynh_add_nginx_config
 #=================================================
 # UPGRADE DEPENDENCIES
 #=================================================
-ynh_print_info --message="Upgrading dependencies..." --weight=1
+ynh_script_progression --message="Upgrading dependencies..." --weight=1
 
 ynh_install_nodejs --nodejs_version=$nodejs_version
 
 #=================================================
 # SETUP SYSTEMD
 #=================================================
-ynh_print_info --message="Upgrading systemd configuration..." --weight=1
+ynh_script_progression --message="Upgrading systemd configuration..." --weight=1
 
 ynh_add_systemd_config
 
@@ -132,14 +132,14 @@ yunohost service add $app --description="A non-linear personal web notebook" --l
 #=================================================
 # START SYSTEMD SERVICE
 #=================================================
-ynh_print_info --message="Starting a systemd service..." --weight=1
+ynh_script_progression --message="Starting a systemd service..." --weight=1
 
-ynh_systemd_action --service_name=$app --action=start --log_path=systemd --line_match="Serving on"
+ynh_systemd_action --service_name=$app --action=restart --log_path=systemd --line_match="Serving on"
 
 #=================================================
 # RELOAD NGINX
 #=================================================
-ynh_print_info --message="Reloading NGINX web server..."
+ynh_script_progression --message="Reloading NGINX web server..."
 
 ynh_systemd_action --service_name=nginx --action=reload
 
@@ -147,4 +147,4 @@ ynh_systemd_action --service_name=nginx --action=reload
 # END OF SCRIPT
 #=================================================
 
-ynh_print_info --message="Upgrade of $app completed" --last
+ynh_script_progression --message="Upgrade of $app completed" --last

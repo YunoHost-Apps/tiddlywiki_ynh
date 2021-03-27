@@ -115,6 +115,7 @@ ynh_replace_string --match_string="__ENV_PATH__" --replace_string="$PATH" --targ
 ynh_replace_string --match_string="__YNH_NODE__" --replace_string="$ynh_node" --target_file="../conf/systemd.service"
 ynh_replace_string --match_string="__PASSWORD__" --replace_string="$password" --target_file="../conf/systemd.service"
 ynh_replace_string --match_string="__ADMIN__" --replace_string="$admin" --target_file="../conf/systemd.service"
+
 ynh_add_systemd_config
 
 #=================================================
@@ -138,7 +139,7 @@ yunohost service add $app --description="A non-linear personal web notebook" --l
 #=================================================
 ynh_script_progression --message="Starting a systemd service..." --weight=2
 
-ynh_systemd_action --service_name=$app --action=start --log_path=systemd --line_match="Serving on"
+ynh_systemd_action --service_name=$app --action=restart --log_path=systemd --line_match="Serving on"
 
 #=================================================
 # SETUP SSOWAT
