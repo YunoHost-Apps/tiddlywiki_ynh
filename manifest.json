@@ -7,8 +7,8 @@
         "fr": "Un carnet Web personnel non linéaire"
     },
     "version": "5.1.23~ynh1",
-    "url": "https://nullboard.io/preview",
-    "license": "BSD-3-Clause",
+    "url": "https://tiddlywiki.com/",
+    "license": "BSD-2-Clause",
     "maintainer": {
         "name": "eric_G",
         "email": ""
@@ -16,7 +16,7 @@
     "requirements": {
         "yunohost": ">= 4.1.7"
     },
-    "multi_instance": true,
+    "multi_instance": false,
     "services": [
         "nginx"
     ],
@@ -28,10 +28,14 @@
                 "example": "domain.org"
             },
             {
-                "name": "path",
-                "type": "path",
-                "example": "/tiddlywiki",
-                "default": "/tiddlywiki"
+                "name": "admin",
+                "type": "user",
+                "example": "johndoe"
+            },
+            {
+                "name": "password",
+                "type": "password",
+                "example": "Choose a password"
             },
             {
                 "name": "is_public",
@@ -41,16 +45,6 @@
                         "fr": "Si cette case est cochée, TiddlyWiki sera accessible aux personnes n’ayant pas de compte. Vous pourrez changer ceci plus tard via la webadmin."
                 },
                 "default": true
-            },
-            {
-                "name": "language",
-                "type": "string",
-                "ask": {
-                    "en": "Choose the application language",
-                    "fr": "Choisissez la langue de l'application"
-                },
-                "choices": ["fr", "en"],
-                "default": "fr"
             }
         ]
     }
