@@ -84,9 +84,6 @@ ynh_system_user_create --username=$app --home_dir=$final_path
 if [ "$upgrade_type" == "UPGRADE_APP" ]
 then
 	ynh_print_info --message="Upgrading source files..."
-
-	# Download, check integrity, uncompress and patch the source from app.src
-	#ynh_setup_source --dest_dir="$final_path"
 	
 	pushd $final_path
 		ynh_use_nodejs
@@ -123,7 +120,7 @@ ynh_add_systemd_config
 #=================================================
 
 # Set permissions on app files
-chown -R $app: $final_path
+chown -R $app:$app $final_path
 
 #=================================================
 # ADVERTISE SERVICE IN ADMIN PANEL
