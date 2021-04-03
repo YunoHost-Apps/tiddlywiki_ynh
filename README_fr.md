@@ -29,8 +29,8 @@ TiddlyWiki est un wiki interactif complet en JavaScript. Il peut être utilisé 
 
 #### Architectures supportées
 
-* x86-64 - [![Build Status](https://ci-apps.yunohost.org/ci/logs/tiddlywiki%40%28Apps%29.svg)](https://ci-apps.yunohost.org/ci/apps/tiddlywiki/)
-* ARMv8-A - [![Build Status](https://ci-apps-arm.yunohost.org/ci/logs/tiddlywiki%20%28Apps%29.svg)](https://ci-apps-arm.yunohost.org/ci/apps/tiddlywiki/)
+* x86-64 - [![Build Status](https://ci-apps.yunohost.org/ci/logs/tiddlywiki.svg)](https://ci-apps.yunohost.org/ci/apps/tiddlywiki/)
+* ARMv8-A - [![Build Status](https://ci-apps-arm.yunohost.org/ci/logs/tiddlywiki.svg)](https://ci-apps-arm.yunohost.org/ci/apps/tiddlywiki/)
 
 ## Liens
 
