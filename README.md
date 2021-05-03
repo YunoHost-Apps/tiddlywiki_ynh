@@ -6,7 +6,7 @@
 *[Lire ce readme en français.](./README_fr.md)*
 
 > *This package allow you to install TiddlyWiki quickly and simply on a YunoHost server.  
-If you don’t have YunoHost, please see [here](https://yunohost.org/#/install) to know how to install and enjoy it.*
+If you don’t have YunoHost, please see [here](https://yunohost.org/install) to know how to install and enjoy it.*
 
 ## Overview
 TiddlyWiki is a non-linear personal web notebook that anyone can use and keep forever, independently of any corporation.
