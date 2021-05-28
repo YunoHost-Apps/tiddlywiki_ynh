@@ -15,6 +15,7 @@
 		setup_private=1
 		setup_public=1
 		upgrade=1
+		upgrade=1	from_commit=befb3426e13fb5f094c2cc1b6841de202506c6fa
 		backup_restore=1
 		multi_instance=0
 		change_url=1
@@ -22,6 +23,6 @@
 Email=
 Notification=none
 ;;; Upgrade options
-	; commit=CommitHash
-		name=Name and date of the commit.
+	; commit=befb3426e13fb5f094c2cc1b6841de202506c6fa
+		name=Merge pull request #4 from YunoHost-Apps/testing
 		manifest_arg=domain=DOMAIN&path=PATH&admin=USER&is_public=1&password=password&port=8095&
