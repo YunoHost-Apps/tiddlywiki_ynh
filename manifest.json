@@ -6,15 +6,22 @@
         "en": "A non-linear personal web notebook",
         "fr": "Un carnet Web personnel non linéaire"
     },
-    "version": "5.1.23~ynh2",
+    "version": "5.1.23~ynh3",
     "url": "https://tiddlywiki.com/",
+    "upstream": {
+        "license": "BSD-2-Clause",
+        "website": "https://tiddlywiki.com/",
+        "demo": "https://tiddlywiki.com/",
+        "admindoc": "https://tiddlywiki.com/",
+        "code": "https://github.com/Jermolene/TiddlyWiki5"
+    },
     "license": "BSD-2-Clause",
     "maintainer": {
         "name": "eric_G",
         "email": ""
     },
     "requirements": {
-        "yunohost": ">= 4.1.7"
+        "yunohost": ">= 4.2.4"
     },
     "multi_instance": false,
     "services": [

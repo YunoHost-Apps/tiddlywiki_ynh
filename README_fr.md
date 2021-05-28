@@ -6,7 +6,7 @@
 *[Read this readme in english.](./README.md)* 
 
 > *Ce package vous permet d’installer TiddlyWiki rapidement et simplement sur un serveur YunoHost.  
-Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l’installer et en profiter.*
+Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/install) pour savoir comment l’installer et en profiter.*
 
 ## Vue d’ensemble
 TiddlyWiki est un cahier Web personnel non linéaire que tout le monde peut utiliser et conserver pour toujours, indépendamment de toute entreprise.
@@ -29,8 +29,8 @@ TiddlyWiki est un wiki interactif complet en JavaScript. Il peut être utilisé 
 
 #### Architectures supportées
 
-* x86-64 - [![Build Status](https://ci-apps.yunohost.org/ci/logs/tiddlywiki%40%28Apps%29.svg)](https://ci-apps.yunohost.org/ci/apps/tiddlywiki/)
-* ARMv8-A - [![Build Status](https://ci-apps-arm.yunohost.org/ci/logs/tiddlywiki%20%28Apps%29.svg)](https://ci-apps-arm.yunohost.org/ci/apps/tiddlywiki/)
+* x86-64 - [![Build Status](https://ci-apps.yunohost.org/ci/logs/tiddlywiki.svg)](https://ci-apps.yunohost.org/ci/apps/tiddlywiki/)
+* ARMv8-A - [![Build Status](https://ci-apps-arm.yunohost.org/ci/logs/tiddlywiki.svg)](https://ci-apps-arm.yunohost.org/ci/apps/tiddlywiki/)
 
 ## Liens
 
