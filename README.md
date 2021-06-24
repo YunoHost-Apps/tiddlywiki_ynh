@@ -30,7 +30,7 @@ A non-linear personal web notebook
 
 * Official app website: https://tiddlywiki.com/
 * Official admin documentation: https://tiddlywiki.com/
-* Upstream app code repository:  https://github.com/Jermolene/TiddlyWiki5
+* Upstream app code repository: https://github.com/Jermolene/TiddlyWiki5
 * YunoHost documentation for this app: https://yunohost.org/app_tiddlywiki
 * Report a bug: https://github.com/YunoHost-Apps/tiddlywiki_ynh/issues
 
