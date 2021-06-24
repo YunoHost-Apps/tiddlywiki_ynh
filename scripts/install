@@ -104,13 +104,13 @@ ynh_add_nginx_config
 #=================================================
 ynh_script_progression --message="Configuring TiddlyWiki..." --weight=2
 
+#chown -R $app $final_path
+
 pushd $final_path
 	ynh_use_nodejs
 	npm install -g tiddlywiki
-	env $ynh_node_load_PATH $final_path mynewwiki --init server
- popd
-
-#mkdir $final_path/wiki/tiddlers
+	ynh_exec_as $app env $ynh_node_load_PATH $final_path mynewwiki --init server
+popd
 
 #=================================================
 # SETUP SYSTEMD
