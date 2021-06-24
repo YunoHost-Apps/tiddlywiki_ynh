@@ -107,7 +107,7 @@ ynh_script_progression --message="Configuring TiddlyWiki..." --weight=2
 pushd $final_path
 	ynh_use_nodejs
 	npm install -g tiddlywiki
-	tiddlywiki mynewwiki --init server
+	env $ynh_node_load_PATH tiddlywiki mynewwiki --init server
  popd
 
 #=================================================
@@ -116,7 +116,6 @@ pushd $final_path
 ynh_script_progression --message="Configuring a systemd service..." --weight=1
 
 ynh_replace_string --match_string="__ENV_PATH__" --replace_string="$PATH" --target_file=../conf/systemd.service
-ynh_replace_string --match_string="__YNH_NODE__" --replace_string="$ynh_node" --target_file=../conf/systemd.service
 
 ynh_add_systemd_config
 
