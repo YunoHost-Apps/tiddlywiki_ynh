@@ -107,7 +107,7 @@ ynh_script_progression --message="Configuring TiddlyWiki..." --weight=2
 pushd $final_path
 	ynh_use_nodejs
 	npm install -g tiddlywiki
-	env $ynh_node_load_PATH $final_path/tiddlywiki mynewwiki --init server
+	env $ynh_node_load_PATH $final_path mynewwiki --init server
  popd
 
 #mkdir $final_path/wiki/tiddlers
