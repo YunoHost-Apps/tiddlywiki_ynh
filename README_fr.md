@@ -13,7 +13,7 @@ Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour
 
 Un carnet Web personnel non linéaire
 
-**Version incluse :** 5.1.23~ynh4
+**Version incluse :** 5.1.23~ynh5
 
 **Démo :** https://tiddlywiki.com/
 
