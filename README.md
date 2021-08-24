@@ -17,7 +17,7 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 A non-linear personal web notebook
 
-**Shipped version:** 5.1.23~ynh4
+**Shipped version:** 5.1.23~ynh5
 
 **Demo:** https://tiddlywiki.com/
 

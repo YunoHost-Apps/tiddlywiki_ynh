@@ -6,7 +6,7 @@
         "en": "A non-linear personal web notebook",
         "fr": "Un carnet Web personnel non linéaire"
     },
-    "version": "5.1.23~ynh4",
+    "version": "5.1.23~ynh5",
     "url": "https://tiddlywiki.com/",
     "upstream": {
         "license": "BSD-2-Clause",
@@ -42,6 +42,10 @@
             {
                 "name": "password",
                 "type": "password",
+                "help": {
+                        "en": "Using some special characters such as % may cause issues.",
+                        "fr": "L'utilisation de certains caractères spéciaux tels que % peut causer des erreurs."
+                },
                 "example": "Choose a password"
             },
             {
