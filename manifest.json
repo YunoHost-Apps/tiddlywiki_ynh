@@ -3,8 +3,8 @@
     "id": "tiddlywiki",
     "packaging_format": 1,
     "description": {
-        "en": "A non-linear personal web notebook",
-        "fr": "Un carnet Web personnel non linéaire"
+        "en": "Non-linear personal web notebook",
+        "fr": "Carnet Web personnel non linéaire"
     },
     "version": "5.1.23~ynh5",
     "url": "https://tiddlywiki.com/",
