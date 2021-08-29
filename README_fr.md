@@ -11,7 +11,7 @@ Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour
 
 ## Vue d'ensemble
 
-Un carnet Web personnel non linéaire
+Carnet Web personnel non linéaire
 
 **Version incluse :** 5.1.23~ynh5
 

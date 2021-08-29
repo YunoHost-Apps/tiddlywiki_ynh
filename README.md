@@ -15,7 +15,7 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 ## Overview
 
-A non-linear personal web notebook
+Non-linear personal web notebook
 
 **Shipped version:** 5.1.23~ynh5
 
