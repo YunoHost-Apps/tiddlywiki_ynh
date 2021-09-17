@@ -35,20 +35,6 @@
                 "example": "domain.org"
             },
             {
-                "name": "admin",
-                "type": "user",
-                "example": "johndoe"
-            },
-            {
-                "name": "password",
-                "type": "password",
-                "help": {
-                        "en": "Using some special characters such as % may cause issues.",
-                        "fr": "L'utilisation de certains caractères spéciaux tels que % peut causer des erreurs."
-                },
-                "example": "Choose a password"
-            },
-            {
                 "name": "is_public",
                 "type": "boolean",
                  "help": {
