@@ -3,8 +3,8 @@
     "id": "tiddlywiki",
     "packaging_format": 1,
     "description": {
-        "en": "A non-linear personal web notebook",
-        "fr": "Un carnet Web personnel non linéaire"
+        "en": "Non-linear personal web notebook",
+        "fr": "Carnet Web personnel non linéaire"
     },
     "version": "5.1.23~ynh5",
     "url": "https://tiddlywiki.com/",
@@ -33,20 +33,6 @@
                 "name": "domain",
                 "type": "domain",
                 "example": "domain.org"
-            },
-            {
-                "name": "admin",
-                "type": "user",
-                "example": "johndoe"
-            },
-            {
-                "name": "password",
-                "type": "password",
-                "help": {
-                        "en": "Using some special characters such as % may cause issues.",
-                        "fr": "L'utilisation de certains caractères spéciaux tels que % peut causer des erreurs."
-                },
-                "example": "Choose a password"
             },
             {
                 "name": "is_public",
