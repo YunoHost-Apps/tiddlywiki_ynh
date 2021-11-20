@@ -119,9 +119,6 @@ done
 # GENERIC FINALIZATION
 #=================================================
 
-# Install moreutils, needed for sponge
-sudo apt-get install moreutils
-
 # Replace new version in manifest
 jq -s --indent 4 ".[] | .version = \"$version~ynh1\"" manifest.json | sponge manifest.json
 
