@@ -1,5 +1,5 @@
-SOURCE_URL=https://github.com/Jermolene/TiddlyWiki5/archive/v5.1.23.tar.gz
-SOURCE_SUM=a35f8a4cb25f1f75e49ec40dcc9b1cd7ef4fb099322507464272be720fdc28d3
+SOURCE_URL=https://github.com/Jermolene/TiddlyWiki5/archive/v5.2.1.tar.gz
+SOURCE_SUM=4e24c2df72c3b4c015db1589c5ce06d80d82a74447c2b07153a2d197b1f2c429
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=true
