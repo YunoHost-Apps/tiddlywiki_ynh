@@ -78,6 +78,13 @@ ynh_script_progression --message="Making sure dedicated system user exists..." -
 ynh_system_user_create --username=$app --home_dir=$final_path
 
 #=================================================
+# UPGRADE DEPENDENCIES
+#=================================================
+ynh_script_progression --message="Upgrading dependencies..." --weight=1
+
+ynh_install_nodejs --nodejs_version=$nodejs_version
+
+#=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
 
@@ -103,13 +110,6 @@ ynh_script_progression --message="Upgrading NGINX web server configuration..." -
 
 # Create a dedicated nginx config
 ynh_add_nginx_config
-
-#=================================================
-# UPGRADE DEPENDENCIES
-#=================================================
-ynh_script_progression --message="Upgrading dependencies..." --weight=1
-
-ynh_install_nodejs --nodejs_version=$nodejs_version
 
 #=================================================
 # SETUP SYSTEMD
