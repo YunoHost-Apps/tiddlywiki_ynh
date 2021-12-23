@@ -88,7 +88,7 @@ then
 	pushd $final_path
 		ynh_use_nodejs
 		#npm update -g tiddlywiki
-		ynh_exec_as $app env $ynh_node_load_PATH $ynh_npm  update -g tiddlywiki
+		ynh_exec_as $app env $ynh_node_load_PATH $ynh_npm update -g tiddlywiki
 	popd
 fi
 
