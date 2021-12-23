@@ -78,9 +78,7 @@ ynh_script_progression --message="Setting up source files..." --weight=1
 
 ynh_app_setting_set --app=$app --key=final_path --value=$final_path
 # Download, check integrity, uncompress and patch the source from app.src
-#ynh_setup_source --dest_dir=$final_path
-
-mkdir -p $final_path
+ynh_setup_source --dest_dir=$final_path
 
 chmod 750 "$final_path"
 chmod -R o-rwx "$final_path"
@@ -101,7 +99,7 @@ ynh_script_progression --message="Configuring TiddlyWiki..." --weight=2
 
 pushd $final_path
 	ynh_use_nodejs
-	$ynh_npm install tiddlywiki@$tiddlywiki_version
+	ynh_exec_as $app env $ynh_node_load_PATH $ynh_npm install
 	ynh_exec_as $app env $ynh_node_load_PATH $final_path/tiddlywiki mynewwiki --init server
 popd
 
