@@ -13,7 +13,7 @@ Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour
 
 TiddlyWiki is a complete interactive wiki in JavaScript. It can be used as a single HTML file in the browser or as a powerful Node.js application. It is highly customisable: the entire user interface is itself implemented in hackable WikiText.
 
-**Version incluse :** 5.1.23~ynh5
+**Version incluse :** 5.2.1~ynh1
 
 **Démo :** https://tiddlywiki.com/
 
