@@ -70,6 +70,13 @@ ynh_script_progression --message="Stopping a systemd service..." --weight=1
 ynh_systemd_action --service_name=$app --action=stop
 
 #=================================================
+# UPGRADE DEPENDENCIES
+#=================================================
+ynh_script_progression --message="Upgrading dependencies..." --weight=1
+
+ynh_install_nodejs --nodejs_version=$nodejs_version
+
+#=================================================
 # CREATE DEDICATED USER
 #=================================================
 ynh_script_progression --message="Making sure dedicated system user exists..." --weight=1
@@ -87,7 +94,7 @@ then
 	
 	pushd $final_path
 		ynh_use_nodejs
-		npm update -g tiddlywiki
+		npm update -g tiddlywiki@${tiddlywiki_version}
 	popd
 fi
 
@@ -102,13 +109,6 @@ ynh_script_progression --message="Upgrading NGINX web server configuration..." -
 
 # Create a dedicated nginx config
 ynh_add_nginx_config
-
-#=================================================
-# UPGRADE DEPENDENCIES
-#=================================================
-ynh_script_progression --message="Upgrading dependencies..." --weight=1
-
-ynh_install_nodejs --nodejs_version=$nodejs_version
 
 #=================================================
 # SETUP SYSTEMD
