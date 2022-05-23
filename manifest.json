@@ -6,7 +6,7 @@
         "en": "Non-linear personal web notebook",
         "fr": "Carnet Web personnel non linéaire"
     },
-    "version": "5.1.23~ynh5",
+    "version": "5.2.2~ynh1",
     "url": "https://tiddlywiki.com/",
     "upstream": {
         "license": "BSD-2-Clause",
@@ -29,6 +29,14 @@
     ],
     "arguments": {
         "install" : [
+            {
+                "name": "warning",
+                "type": "display_text",
+                "ask": {
+                    "en": "It is important that you regularly backup your notes (tiddlers) locally befor upgrading the app.\nClick on the cloud icon -> `Save snapshot for offline use`\nTo restore a local backup to the server, drag and drop your tiddlers backup file into your TiddlyWiki page.",
+                    "fr": "Il est important que vous sauvegardiez régulièrement vos notes (tiddlers) localement avant de mettre à jour l'application.\nCliquez sur l'icône cloud -> `Enregistrer l'instantané pour une utilisation hors ligne`\nPour restaurer une sauvegarde locale sur le serveur, faites glisser et déposez votre fichier tiddler dans votre page TiddlyWiki."
+                }
+            },
             {
                 "name": "domain",
                 "type": "domain"

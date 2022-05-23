@@ -4,7 +4,9 @@
 # COMMON VARIABLES
 #=================================================
 
-nodejs_version=14
+nodejs_version="14"
+
+tiddlywiki_version="5.2.2"
 
 #=================================================
 # PERSONAL HELPERS
