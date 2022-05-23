@@ -33,8 +33,8 @@
                 "name": "warning",
                 "type": "display_text",
                 "ask": {
-                    "en": "It is very important that you regularly backup your notes (tiddlers) locally befor upgrading the app.\nClick on the cloud icon -> `Save snapshot for offline use`\nTo restore a local backup to the server, drag and drop your tiddlers backup file into your TiddlyWiki page.",
-                    "fr": "Il est très important que vous sauvegardiez régulièrement vos notes (tiddlers) localement avant de mettre à jour l'application.\nCliquez sur l'icône cloud -> `Enregistrer l'instantané pour une utilisation hors ligne`\nPour restaurer une sauvegarde locale sur le serveur, faites glisser et déposez votre fichier tiddler dans votre page TiddlyWiki."
+                    "en": "It is important that you regularly backup your notes (tiddlers) locally befor upgrading the app.\nClick on the cloud icon -> `Save snapshot for offline use`\nTo restore a local backup to the server, drag and drop your tiddlers backup file into your TiddlyWiki page.",
+                    "fr": "Il est important que vous sauvegardiez régulièrement vos notes (tiddlers) localement avant de mettre à jour l'application.\nCliquez sur l'icône cloud -> `Enregistrer l'instantané pour une utilisation hors ligne`\nPour restaurer une sauvegarde locale sur le serveur, faites glisser et déposez votre fichier tiddler dans votre page TiddlyWiki."
                 }
             },
             {
