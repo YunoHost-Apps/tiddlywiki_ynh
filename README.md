@@ -5,7 +5,7 @@ It shall NOT be edited by hand.
 
 # TiddlyWiki for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/tiddlywiki.svg)](https://dash.yunohost.org/appci/app/tiddlywiki) ![](https://ci-apps.yunohost.org/ci/badges/tiddlywiki.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/tiddlywiki.maintain.svg)  
+[![Integration level](https://dash.yunohost.org/integration/tiddlywiki.svg)](https://dash.yunohost.org/appci/app/tiddlywiki) ![Working status](https://ci-apps.yunohost.org/ci/badges/tiddlywiki.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/tiddlywiki.maintain.svg)  
 [![Install TiddlyWiki with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=tiddlywiki)
 
 *[Lire ce readme en français.](./README_fr.md)*
@@ -23,8 +23,8 @@ TiddlyWiki is a complete interactive wiki in JavaScript. It can be used as a sin
 
 ## Screenshots
 
-![](./doc/screenshots/.DS_Store)
-![](./doc/screenshots/screenshot.png)
+![Screenshot of TiddlyWiki](./doc/screenshots/.DS_Store)
+![Screenshot of TiddlyWiki](./doc/screenshots/screenshot.png)
 
 ## Disclaimers / important information
 
@@ -39,21 +39,22 @@ To restore a local backup to the server, drag and drop your tiddlers backup file
 
 ## Documentation and resources
 
-* Official app website: https://tiddlywiki.com/
-* Official admin documentation: https://tiddlywiki.com/
-* Upstream app code repository: https://github.com/Jermolene/TiddlyWiki5
-* YunoHost documentation for this app: https://yunohost.org/app_tiddlywiki
-* Report a bug: https://github.com/YunoHost-Apps/tiddlywiki_ynh/issues
+* Official app website: <https://tiddlywiki.com/>
+* Official admin documentation: <https://tiddlywiki.com/>
+* Upstream app code repository: <https://github.com/Jermolene/TiddlyWiki5>
+* YunoHost documentation for this app: <https://yunohost.org/app_tiddlywiki>
+* Report a bug: <https://github.com/YunoHost-Apps/tiddlywiki_ynh/issues>
 
 ## Developer info
 
 Please send your pull request to the [testing branch](https://github.com/YunoHost-Apps/tiddlywiki_ynh/tree/testing).
 
 To try the testing branch, please proceed like that.
-```
+
+``` bash
 sudo yunohost app install https://github.com/YunoHost-Apps/tiddlywiki_ynh/tree/testing --debug
 or
 sudo yunohost app upgrade tiddlywiki -u https://github.com/YunoHost-Apps/tiddlywiki_ynh/tree/testing --debug
 ```
 
-**More info regarding app packaging:** https://yunohost.org/packaging_apps
+**More info regarding app packaging:** <https://yunohost.org/packaging_apps>
