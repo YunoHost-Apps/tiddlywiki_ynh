@@ -94,7 +94,8 @@ then
 	
 	pushd $final_path
 		ynh_use_nodejs
-		npm update -g tiddlywiki@${tiddlywiki_version}
+		npm install npm@latest --location=global
+		npm update tiddlywiki --location=global
 	popd
 fi
 
