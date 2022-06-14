@@ -6,7 +6,7 @@
         "en": "Non-linear personal web notebook",
         "fr": "Carnet Web personnel non linéaire"
     },
-    "version": "5.2.2~ynh1",
+    "version": "5.2.2~ynh2",
     "url": "https://tiddlywiki.com/",
     "upstream": {
         "license": "BSD-2-Clause",
