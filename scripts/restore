@@ -83,6 +83,7 @@ ynh_script_progression --message="Reinstalling dependencies..." --weight=1
 
 # Install Nodejs
 ynh_exec_warn_less ynh_install_nodejs --nodejs_version=$nodejs_version
+ynh_use_nodejs
 
 #=================================================
 # RESTORE THE NGINX CONFIGURATION

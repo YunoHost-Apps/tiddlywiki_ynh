@@ -67,6 +67,7 @@ ynh_app_setting_set --app=$app --key=port --value=$port
 ynh_script_progression --message="Installing dependencies..."
 
 ynh_exec_warn_less ynh_install_nodejs --nodejs_version=$nodejs_version
+ynh_use_nodejs
 
 #=================================================
 # CREATE DEDICATED USER
@@ -118,10 +119,12 @@ chown -R $app:www-data "$datadir"
 #=================================================
 ynh_script_progression --message="Configuring TiddlyWiki..." --weight=2
 
-pushd $final_path
-	ynh_use_nodejs
-	ynh_exec_warn_less ynh_exec_as $app env $ynh_node_load_PATH ./tiddlywiki.js $datadir --init server
-popd
+if [ ! -f $datadir/tiddlywiki.info ]
+then
+	pushd $final_path
+		ynh_exec_warn_less ynh_exec_as $app env $ynh_node_load_PATH ./tiddlywiki.js $datadir --init server
+	popd
+fi
 
 #=================================================
 # SETUP SYSTEMD
