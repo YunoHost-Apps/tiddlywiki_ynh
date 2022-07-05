@@ -6,7 +6,7 @@
         "en": "Non-linear personal web notebook",
         "fr": "Carnet Web personnel non linéaire"
     },
-    "version": "5.2.2~ynh2",
+    "version": "5.2.2~ynh3",
     "url": "https://tiddlywiki.com/",
     "upstream": {
         "license": "BSD-2-Clause",
@@ -28,7 +28,7 @@
         "nginx"
     ],
     "arguments": {
-        "install" : [
+        "install": [
             {
                 "name": "warning",
                 "type": "display_text",
@@ -44,11 +44,21 @@
             {
                 "name": "is_public",
                 "type": "boolean",
-                 "help": {
-                        "en": "If enabled, TiddlyWiki will be accessible by people who doesn’t have an account. This can be changed later via the webadmin.",
-                        "fr": "Si cette case est cochée, TiddlyWiki sera accessible aux personnes n’ayant pas de compte. Vous pourrez changer ceci plus tard via la webadmin."
+                "help": {
+                    "en": "If enabled, TiddlyWiki will be accessible by people who doesn’t have an account. This can be changed later via the webadmin.",
+                    "fr": "Si cette case est cochée, TiddlyWiki sera accessible aux personnes n’ayant pas de compte. Vous pourrez changer ceci plus tard via la webadmin."
                 },
                 "default": true
+            },
+            {
+                "name": "language",
+                "type": "string",
+                "ask": {
+                    "en": "Choose the application language",
+                    "fr": "Choisissez la langue de l'application"
+                },
+                "choices": ["ar-PS", "ca-ES", "cs-CZ", "da-DK", "de-AT", "de-CH", "de-DE", "el-GR", "en-US", "es-ES", "fa-IR", "fr-FR", "he-IL", "hi-IN", "ia-IA", "it-IT", "ja-JP", "ko-KR", "nl-NL", "pa-IN", "pl-PL", "pt-BR", "pt-PT", "ru-RU", "sk-SK", "sl-SI", "sv-SE", "zh-CN", "zh-Hans", "zh-Hant", "zh-HK", "zh-TW"],
+                "default": "en-US"
             }
         ]
     }
