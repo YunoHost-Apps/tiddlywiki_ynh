@@ -23,7 +23,6 @@ TiddlyWiki is a complete interactive wiki in JavaScript. It can be used as a sin
 
 ## Captures d'écran
 
-![Capture d'écran de TiddlyWiki](./doc/screenshots/.DS_Store)
 ![Capture d'écran de TiddlyWiki](./doc/screenshots/screenshot.png)
 
 ## Avertissements / informations importantes
