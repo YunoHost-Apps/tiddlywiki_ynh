@@ -5,7 +5,8 @@ It shall NOT be edited by hand.
 
 # TiddlyWiki for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/tiddlywiki.svg)](https://dash.yunohost.org/appci/app/tiddlywiki) ![Working status](https://ci-apps.yunohost.org/ci/badges/tiddlywiki.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/tiddlywiki.maintain.svg)  
+[![Integration level](https://dash.yunohost.org/integration/tiddlywiki.svg)](https://dash.yunohost.org/appci/app/tiddlywiki) ![Working status](https://ci-apps.yunohost.org/ci/badges/tiddlywiki.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/tiddlywiki.maintain.svg)
+
 [![Install TiddlyWiki with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=tiddlywiki)
 
 *[Lire ce readme en français.](./README_fr.md)*
@@ -18,7 +19,6 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 TiddlyWiki is a complete interactive wiki in JavaScript. It can be used as a single HTML file in the browser or as a powerful Node.js application. It is highly customisable: the entire user interface is itself implemented in hackable WikiText.
 
 **Shipped version:** 5.2.3~ynh1
-
 
 **Demo:** https://tiddlywiki.com/
 
