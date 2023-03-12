@@ -18,24 +18,13 @@ Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) po
 
 TiddlyWiki is a complete interactive wiki in JavaScript. It can be used as a single HTML file in the browser or as a powerful Node.js application. It is highly customisable: the entire user interface is itself implemented in hackable WikiText.
 
-**Version incluse :** 5.2.3~ynh1
+**Version incluse :** 5.2.5~ynh1
 
 **Démo :** https://tiddlywiki.com/
 
 ## Captures d’écran
 
 ![Capture d’écran de TiddlyWiki](./doc/screenshots/screenshot.png)
-
-## Avertissements / informations importantes
-
-## Save your Tiddlers!
-
-It is very important that you regularly backup your notes (tiddlers) locally.
-
-- Click on the cloud icon -> `Save snapshot for offline use`
-
-To restore a local backup to the server, drag and drop your tiddlers backup file into your TiddlyWiki page.
-
 
 ## Documentations et ressources
 
