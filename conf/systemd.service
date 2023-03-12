@@ -6,10 +6,10 @@ After=network.target
 Type=simple
 User=__APP__
 Group=__APP__
-WorkingDirectory=__FINALPATH__/
+WorkingDirectory=__INSTALL_DIR__/
 Environment=PATH=__YNH_NODE_LOAD_PATH__
 Environment=NODE_ENV=production
-ExecStart=__YNH_NODE__ tiddlywiki ++languages/__LANGUAGE__ __DATADIR__ --listen port=__PORT__
+ExecStart=__YNH_NODE__ tiddlywiki ++languages/__LANGUAGE__ __DATA_DIR__ --listen port=__PORT__
 Restart=always
 
 # Sandboxing options to harden security
