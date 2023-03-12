@@ -5,43 +5,32 @@ It shall NOT be edited by hand.
 
 # TiddlyWiki pour YunoHost
 
-[![Niveau d'intégration](https://dash.yunohost.org/integration/tiddlywiki.svg)](https://dash.yunohost.org/appci/app/tiddlywiki) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/tiddlywiki.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/tiddlywiki.maintain.svg)  
+[![Niveau d’intégration](https://dash.yunohost.org/integration/tiddlywiki.svg)](https://dash.yunohost.org/appci/app/tiddlywiki) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/tiddlywiki.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/tiddlywiki.maintain.svg)
+
 [![Installer TiddlyWiki avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=tiddlywiki)
 
 *[Read this readme in english.](./README.md)*
 
-> *Ce package vous permet d'installer TiddlyWiki rapidement et simplement sur un serveur YunoHost.
-Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l'installer et en profiter.*
+> *Ce package vous permet d’installer TiddlyWiki rapidement et simplement sur un serveur YunoHost.
+Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l’installer et en profiter.*
 
-## Vue d'ensemble
+## Vue d’ensemble
 
 TiddlyWiki is a complete interactive wiki in JavaScript. It can be used as a single HTML file in the browser or as a powerful Node.js application. It is highly customisable: the entire user interface is itself implemented in hackable WikiText.
 
-**Version incluse :** 5.2.3~ynh1
-
+**Version incluse :** 5.2.5~ynh1
 
 **Démo :** https://tiddlywiki.com/
 
-## Captures d'écran
+## Captures d’écran
 
-![Capture d'écran de TiddlyWiki](./doc/screenshots/screenshot.png)
-
-## Avertissements / informations importantes
-
-## Save your Tiddlers!
-
-It is very important that you regularly backup your notes (tiddlers) locally.
-
-- Click on the cloud icon -> `Save snapshot for offline use`
-
-To restore a local backup to the server, drag and drop your tiddlers backup file into your TiddlyWiki page.
-
+![Capture d’écran de TiddlyWiki](./doc/screenshots/screenshot.png)
 
 ## Documentations et ressources
 
-* Site officiel de l'app : <https://tiddlywiki.com/>
-* Documentation officielle de l'admin : <https://tiddlywiki.com/>
-* Dépôt de code officiel de l'app : <https://github.com/Jermolene/TiddlyWiki5>
+* Site officiel de l’app : <https://tiddlywiki.com/>
+* Documentation officielle de l’admin : <https://tiddlywiki.com/>
+* Dépôt de code officiel de l’app : <https://github.com/Jermolene/TiddlyWiki5>
 * Documentation YunoHost pour cette app : <https://yunohost.org/app_tiddlywiki>
 * Signaler un bug : <https://github.com/YunoHost-Apps/tiddlywiki_ynh/issues>
 
@@ -57,4 +46,4 @@ ou
 sudo yunohost app upgrade tiddlywiki -u https://github.com/YunoHost-Apps/tiddlywiki_ynh/tree/testing --debug
 ```
 
-**Plus d'infos sur le packaging d'applications :** <https://yunohost.org/packaging_apps>
+**Plus d’infos sur le packaging d’applications :** <https://yunohost.org/packaging_apps>
