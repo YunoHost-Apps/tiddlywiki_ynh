@@ -53,6 +53,7 @@ ram.runtime = "50M"
         [resources.sources.main]
         url = "https://github.com/Jermolene/TiddlyWiki5/archive/v5.2.6.tar.gz"
         sha256 = "19cba9e2d5d9b58a03af6548ac6a0e2b65ecc2b112321ce4bf88ae3ae092cfb3"
+        autoupdate.strategy = "latest_github_tag"
 
     [resources.ports]
 
