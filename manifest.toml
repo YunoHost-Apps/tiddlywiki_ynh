@@ -30,7 +30,6 @@ ram.runtime = "50M"
 
     [install.domain]
     type = "domain"
-    full_domain = true
 
     [install.init_main_permission]
     help.en = "If enabled, TiddlyWiki will be accessible by people who doesn’t have an account. This can be changed later via the webadmin."
