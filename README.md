@@ -31,7 +31,6 @@ TiddlyWiki is a complete interactive wiki in JavaScript. It can be used as a sin
 * Official app website: <https://tiddlywiki.com/>
 * Official admin documentation: <https://tiddlywiki.com/>
 * Upstream app code repository: <https://github.com/Jermolene/TiddlyWiki5>
-* YunoHost documentation for this app: <https://yunohost.org/app_tiddlywiki>
 * Report a bug: <https://github.com/YunoHost-Apps/tiddlywiki_ynh/issues>
 
 ## Developer info
