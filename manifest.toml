@@ -40,7 +40,7 @@ ram.runtime = "50M"
     [install.language]
     ask.en = "Choose the application language"
     ask.fr = "Choisissez la langue de l'application"
-    type = "string"
+    type = "select"
     choices = ["ar-PS", "ca-ES", "cs-CZ", "da-DK", "de-AT", "de-CH", "de-DE", "el-GR", "en-US", "es-ES", "fa-IR", "fr-FR", "he-IL", "hi-IN", "ia-IA", "it-IT", "ja-JP", "ko-KR", "nl-NL", "pa-IN", "pl-PL", "pt-BR", "pt-PT", "ru-RU", "sk-SK", "sl-SI", "sv-SE", "zh-CN", "zh-Hans", "zh-Hant", "zh-HK", "zh-TW"]
     default = "en-US"
 
