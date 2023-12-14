@@ -15,6 +15,7 @@ website = "https://tiddlywiki.com/"
 demo = "https://tiddlywiki.com/"
 admindoc = "https://tiddlywiki.com/"
 code = "https://github.com/Jermolene/TiddlyWiki5"
+fund = "https://opencollective.com/tiddlywiki"
 
 [integration]
 yunohost = ">= 11.2"
