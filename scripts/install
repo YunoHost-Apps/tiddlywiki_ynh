@@ -22,7 +22,6 @@ ynh_use_nodejs
 #=================================================
 ynh_script_progression --message="Setting up source files..." --weight=1
 
-# Download, check integrity, uncompress and patch the source from app.src
 ynh_setup_source --dest_dir="$install_dir"
 
 chmod -R o-rwx "$install_dir"
@@ -33,13 +32,11 @@ chown -R $app:www-data "$install_dir"
 #=================================================
 ynh_script_progression --message="Adding system configurations related to $app..." --weight=1
 
-# Create a dedicated NGINX config
 ynh_add_nginx_config
 
-# Create a dedicated systemd config
 ynh_add_systemd_config
 
-yunohost service add $app --description="A non-linear personal web notebook"
+yunohost service add $app --description="Non-linear personal web notebook" --log="/var/log/$app/$app.log"
 
 #=================================================
 # ADD A CONFIGURATION
