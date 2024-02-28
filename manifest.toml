@@ -5,7 +5,7 @@ name = "TiddlyWiki"
 description.en = "Non-linear personal web notebook"
 description.fr = "Carnet Web personnel non linéaire"
 
-version = "5.3.3~ynh1"
+version = "5.3.3~ynh2"
 
 maintainers = ["eric_G"]
 
