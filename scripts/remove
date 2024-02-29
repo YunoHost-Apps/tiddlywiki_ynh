@@ -23,8 +23,10 @@ then
 	yunohost service remove $app
 fi
 
+# Remove the dedicated systemd config
 ynh_remove_systemd_config
 
+# Remove the dedicated NGINX config
 ynh_remove_nginx_config
 
 ynh_remove_nodejs
