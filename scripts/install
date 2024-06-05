@@ -38,7 +38,7 @@ ynh_add_nginx_config
 # Create a dedicated systemd config
 ynh_add_systemd_config
 
-yunohost service add $app --description="A non-linear personal web notebook"
+yunohost service add $app --description="A non-linear personal web notebook" --log="/var/log/$app/$app.log"
 
 #=================================================
 # ADD A CONFIGURATION
