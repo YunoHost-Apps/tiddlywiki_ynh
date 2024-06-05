@@ -43,7 +43,7 @@ yunohost service add $app --description="A non-linear personal web notebook"
 #=================================================
 # ADD A CONFIGURATION
 #=================================================
-ynh_script_progression --message="Configuring TiddlyWiki..." --weight=2
+ynh_script_progression --message="Configuring $app..." --weight=2
 
 if [ ! -f $data_dir/tiddlywiki.info ]
 then
