@@ -15,7 +15,6 @@ source /usr/share/yunohost/helpers
 ynh_script_progression --message="Installing dependencies..."
 
 ynh_exec_warn_less ynh_install_nodejs --nodejs_version=$nodejs_version
-ynh_use_nodejs
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
@@ -39,16 +38,17 @@ ynh_add_nginx_config
 # Create a dedicated systemd config
 ynh_add_systemd_config
 
-yunohost service add $app --description="A non-linear personal web notebook"
+yunohost service add $app --description="A non-linear personal web notebook" --log="/var/log/$app/$app.log"
 
 #=================================================
 # ADD A CONFIGURATION
 #=================================================
-ynh_script_progression --message="Configuring TiddlyWiki..." --weight=2
+ynh_script_progression --message="Configuring $app..." --weight=2
 
 if [ ! -f $data_dir/tiddlywiki.info ]
 then
 	pushd $install_dir
+		ynh_use_nodejs
 		ynh_exec_warn_less ynh_exec_as $app env $ynh_node_load_PATH ./tiddlywiki.js $data_dir --init server
 	popd
 fi

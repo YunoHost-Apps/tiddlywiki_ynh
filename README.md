@@ -9,7 +9,7 @@ It shall NOT be edited by hand.
 
 [![Install TiddlyWiki with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=tiddlywiki)
 
-*[Read this README is other languages.](./ALL_README.md)*
+*[Read this README in other languages.](./ALL_README.md)*
 
 > *This package allows you to install TiddlyWiki quickly and simply on a YunoHost server.*  
 > *If you don't have YunoHost, please consult [the guide](https://yunohost.org/install) to learn how to install it.*
@@ -18,7 +18,7 @@ It shall NOT be edited by hand.
 
 TiddlyWiki is a complete interactive wiki in JavaScript. It can be used as a single HTML file in the browser or as a powerful Node.js application. It is highly customisable: the entire user interface is itself implemented in hackable WikiText.
 
-**Shipped version:** 5.3.3~ynh1
+**Shipped version:** 5.3.3~ynh2
 
 **Demo:** <https://tiddlywiki.com/>
 
