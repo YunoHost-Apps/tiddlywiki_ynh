@@ -9,7 +9,7 @@ Group=__APP__
 WorkingDirectory=__INSTALL_DIR__/
 Environment=PATH=__PATH_WITH_NODEJS__
 Environment=NODE_ENV=production
-ExecStart=node tiddlywiki ++languages/__LANGUAGE__ __DATA_DIR__ --listen port=__PORT__
+ExecStart=tiddlywiki ++languages/__LANGUAGE__ __DATA_DIR__ --listen port=__PORT__
 Restart=always
 
 # Sandboxing options to harden security
