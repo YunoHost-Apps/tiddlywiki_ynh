@@ -39,7 +39,7 @@ ynh_script_progression "Configuring $app..."
 if [ ! -f $data_dir/tiddlywiki.info ]
 then
 	pushd $install_dir
-		ynh_hide_warnings ynh_exec_as_app ./tiddlywiki.js $data_dir --init server
+		ynh_hide_warnings ynh_exec_as_app --preserve-env=PATH ./tiddlywiki.js $data_dir --init server
 	popd
 fi
 
