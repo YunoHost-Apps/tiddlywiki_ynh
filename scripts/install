@@ -15,7 +15,6 @@ ynh_nodejs_install
 #=================================================
 ynh_script_progression "Setting up source files..."
 
-# Download, check integrity, uncompress and patch the source from app.src
 ynh_setup_source --dest_dir="$install_dir"
 
 chmod -R o-rwx "$install_dir"
@@ -26,13 +25,11 @@ chown -R $app:www-data "$install_dir"
 #=================================================
 ynh_script_progression "Adding system configurations related to $app..."
 
-# Create a dedicated NGINX config
 ynh_config_add_nginx
 
-# Create a dedicated systemd config
 ynh_config_add_systemd
 
-yunohost service add $app --description="A non-linear personal web notebook" --log="/var/log/$app/$app.log"
+yunohost service add $app --description="Non-linear personal web notebook" --log="/var/log/$app/$app.log"
 
 #=================================================
 # ADD A CONFIGURATION
@@ -42,7 +39,6 @@ ynh_script_progression "Configuring $app..."
 if [ ! -f $data_dir/tiddlywiki.info ]
 then
 	pushd $install_dir
-
 		ynh_hide_warnings ynh_exec_as_app node_load_PATH ./tiddlywiki.js $data_dir --init server
 	popd
 fi

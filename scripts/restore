@@ -24,19 +24,14 @@ ynh_restore "$data_dir"
 chown -R $app:www-data "$data_dir"
 
 #=================================================
-# SPECIFIC RESTORATION
-#=================================================
 # REINSTALL DEPENDENCIES
 #=================================================
 ynh_script_progression "Reinstalling dependencies..."
 
-# Install Nodejs
 ynh_nodejs_install
 
 #=================================================
 # RESTORE SYSTEM CONFIGURATIONS
-#=================================================
-# RESTORE THE PHP-FPM CONFIGURATION
 #=================================================
 ynh_script_progression "Restoring system configurations related to $app..."
 
@@ -45,7 +40,7 @@ ynh_restore "/etc/nginx/conf.d/$domain.d/$app.conf"
 ynh_restore "/etc/systemd/system/$app.service"
 systemctl enable $app.service --quiet
 
-yunohost service add $app --description="A non-linear personal web notebook" --log="/var/log/$app/$app.log"
+yunohost service add $app --description="Non-linear personal web notebook" --log="/var/log/$app/$app.log"
 
 #=================================================
 # RELOAD NGINX AND PHP-FPM OR THE APP SERVICE
