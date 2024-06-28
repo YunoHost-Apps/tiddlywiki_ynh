@@ -5,7 +5,7 @@ Il NE doit PAS être modifié à la main.
 
 # TiddlyWiki pour YunoHost
 
-[![Niveau d’intégration](https://dash.yunohost.org/integration/tiddlywiki.svg)](https://dash.yunohost.org/appci/app/tiddlywiki) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/tiddlywiki.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/tiddlywiki.maintain.svg)
+[![Niveau d’intégration](https://dash.yunohost.org/integration/tiddlywiki.svg)](https://ci-apps.yunohost.org/ci/apps/tiddlywiki/) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/tiddlywiki.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/tiddlywiki.maintain.svg)
 
 [![Installer TiddlyWiki avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=tiddlywiki)
 
@@ -18,7 +18,7 @@ Il NE doit PAS être modifié à la main.
 
 TiddlyWiki est un wiki interactif complet en JavaScript. Il peut être utilisé comme un seul fichier HTML dans le navigateur ou comme une puissante application Node.js (cette dernière est utilisée pour YunoHost). Il est hautement personnalisable : toute l'interface utilisateur est elle-même implémentée dans WikiText modifiable.
 
-**Version incluse :** 5.3.3~ynh2
+**Version incluse :** 5.3.4~ynh1
 
 **Démo :** <https://tiddlywiki.com/>
 
