@@ -5,7 +5,7 @@
 
 # YunoHost 上的 TiddlyWiki
 
-[![集成程度](https://dash.yunohost.org/integration/tiddlywiki.svg)](https://dash.yunohost.org/appci/app/tiddlywiki) ![工作状态](https://ci-apps.yunohost.org/ci/badges/tiddlywiki.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/tiddlywiki.maintain.svg)
+[![集成程度](https://dash.yunohost.org/integration/tiddlywiki.svg)](https://ci-apps.yunohost.org/ci/apps/tiddlywiki/) ![工作状态](https://ci-apps.yunohost.org/ci/badges/tiddlywiki.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/tiddlywiki.maintain.svg)
 
 [![使用 YunoHost 安装 TiddlyWiki](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=tiddlywiki)
 
@@ -18,7 +18,7 @@
 
 TiddlyWiki is a complete interactive wiki in JavaScript. It can be used as a single HTML file in the browser or as a powerful Node.js application. It is highly customisable: the entire user interface is itself implemented in hackable WikiText.
 
-**分发版本：** 5.3.3~ynh2
+**分发版本：** 5.3.4~ynh1
 
 **演示：** <https://tiddlywiki.com/>
 

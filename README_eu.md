@@ -5,7 +5,7 @@ EZ editatu eskuz.
 
 # TiddlyWiki YunoHost-erako
 
-[![Integrazio maila](https://dash.yunohost.org/integration/tiddlywiki.svg)](https://dash.yunohost.org/appci/app/tiddlywiki) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/tiddlywiki.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/tiddlywiki.maintain.svg)
+[![Integrazio maila](https://dash.yunohost.org/integration/tiddlywiki.svg)](https://ci-apps.yunohost.org/ci/apps/tiddlywiki/) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/tiddlywiki.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/tiddlywiki.maintain.svg)
 
 [![Instalatu TiddlyWiki YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=tiddlywiki)
 
@@ -18,7 +18,7 @@ EZ editatu eskuz.
 
 TiddlyWiki is a complete interactive wiki in JavaScript. It can be used as a single HTML file in the browser or as a powerful Node.js application. It is highly customisable: the entire user interface is itself implemented in hackable WikiText.
 
-**Paketatutako bertsioa:** 5.3.3~ynh2
+**Paketatutako bertsioa:** 5.3.4~ynh1
 
 **Demoa:** <https://tiddlywiki.com/>
 
