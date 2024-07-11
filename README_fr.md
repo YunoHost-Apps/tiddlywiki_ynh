@@ -18,7 +18,7 @@ Il NE doit PAS être modifié à la main.
 
 TiddlyWiki est un wiki interactif complet en JavaScript. Il peut être utilisé comme un seul fichier HTML dans le navigateur ou comme une puissante application Node.js (cette dernière est utilisée pour YunoHost). Il est hautement personnalisable : toute l'interface utilisateur est elle-même implémentée dans WikiText modifiable.
 
-**Version incluse :** 5.3.4~ynh1
+**Version incluse :** 5.3.5~ynh1
 
 **Démo :** <https://tiddlywiki.com/>
 

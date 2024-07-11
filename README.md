@@ -18,7 +18,7 @@ It shall NOT be edited by hand.
 
 TiddlyWiki is a complete interactive wiki in JavaScript. It can be used as a single HTML file in the browser or as a powerful Node.js application. It is highly customisable: the entire user interface is itself implemented in hackable WikiText.
 
-**Shipped version:** 5.3.4~ynh1
+**Shipped version:** 5.3.5~ynh1
 
 **Demo:** <https://tiddlywiki.com/>
 
