@@ -58,7 +58,8 @@ ram.runtime = "50M"
     [resources.ports]
 
     [resources.system_user]
-
+    group = "www-data:r-x"
+    
     [resources.install_dir]
 
     [resources.data_dir]
