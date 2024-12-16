@@ -5,7 +5,9 @@ NON debe editarse manualmente.
 
 # TiddlyWiki para YunoHost
 
-[![Nivel de integración](https://dash.yunohost.org/integration/tiddlywiki.svg)](https://ci-apps.yunohost.org/ci/apps/tiddlywiki/) ![Estado de funcionamento](https://ci-apps.yunohost.org/ci/badges/tiddlywiki.status.svg) ![Estado de mantemento](https://ci-apps.yunohost.org/ci/badges/tiddlywiki.maintain.svg)
+[![Nivel de integración](https://apps.yunohost.org/badge/integration/tiddlywiki)](https://ci-apps.yunohost.org/ci/apps/tiddlywiki/)
+![Estado de funcionamento](https://apps.yunohost.org/badge/state/tiddlywiki)
+![Estado de mantemento](https://apps.yunohost.org/badge/maintained/tiddlywiki)
 
 [![Instalar TiddlyWiki con YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=tiddlywiki)
 
