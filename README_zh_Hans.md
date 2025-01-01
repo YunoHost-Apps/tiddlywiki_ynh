@@ -5,7 +5,9 @@
 
 # YunoHost 上的 TiddlyWiki
 
-[![集成程度](https://dash.yunohost.org/integration/tiddlywiki.svg)](https://ci-apps.yunohost.org/ci/apps/tiddlywiki/) ![工作状态](https://ci-apps.yunohost.org/ci/badges/tiddlywiki.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/tiddlywiki.maintain.svg)
+[![集成程度](https://apps.yunohost.org/badge/integration/tiddlywiki)](https://ci-apps.yunohost.org/ci/apps/tiddlywiki/)
+![工作状态](https://apps.yunohost.org/badge/state/tiddlywiki)
+![维护状态](https://apps.yunohost.org/badge/maintained/tiddlywiki)
 
 [![使用 YunoHost 安装 TiddlyWiki](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=tiddlywiki)
 

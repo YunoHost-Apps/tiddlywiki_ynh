@@ -5,7 +5,9 @@ Ini TIDAK boleh diedit dengan tangan.
 
 # TiddlyWiki untuk YunoHost
 
-[![Tingkat integrasi](https://dash.yunohost.org/integration/tiddlywiki.svg)](https://ci-apps.yunohost.org/ci/apps/tiddlywiki/) ![Status kerja](https://ci-apps.yunohost.org/ci/badges/tiddlywiki.status.svg) ![Status pemeliharaan](https://ci-apps.yunohost.org/ci/badges/tiddlywiki.maintain.svg)
+[![Tingkat integrasi](https://apps.yunohost.org/badge/integration/tiddlywiki)](https://ci-apps.yunohost.org/ci/apps/tiddlywiki/)
+![Status kerja](https://apps.yunohost.org/badge/state/tiddlywiki)
+![Status pemeliharaan](https://apps.yunohost.org/badge/maintained/tiddlywiki)
 
 [![Pasang TiddlyWiki dengan YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=tiddlywiki)
 

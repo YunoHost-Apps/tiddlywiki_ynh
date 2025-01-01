@@ -5,7 +5,9 @@
 
 # TiddlyWiki для YunoHost
 
-[![Уровень интеграции](https://dash.yunohost.org/integration/tiddlywiki.svg)](https://ci-apps.yunohost.org/ci/apps/tiddlywiki/) ![Состояние работы](https://ci-apps.yunohost.org/ci/badges/tiddlywiki.status.svg) ![Состояние сопровождения](https://ci-apps.yunohost.org/ci/badges/tiddlywiki.maintain.svg)
+[![Уровень интеграции](https://apps.yunohost.org/badge/integration/tiddlywiki)](https://ci-apps.yunohost.org/ci/apps/tiddlywiki/)
+![Состояние работы](https://apps.yunohost.org/badge/state/tiddlywiki)
+![Состояние сопровождения](https://apps.yunohost.org/badge/maintained/tiddlywiki)
 
 [![Установите TiddlyWiki с YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=tiddlywiki)
 

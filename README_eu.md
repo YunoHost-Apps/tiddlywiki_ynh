@@ -5,7 +5,9 @@ EZ editatu eskuz.
 
 # TiddlyWiki YunoHost-erako
 
-[![Integrazio maila](https://dash.yunohost.org/integration/tiddlywiki.svg)](https://ci-apps.yunohost.org/ci/apps/tiddlywiki/) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/tiddlywiki.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/tiddlywiki.maintain.svg)
+[![Integrazio maila](https://apps.yunohost.org/badge/integration/tiddlywiki)](https://ci-apps.yunohost.org/ci/apps/tiddlywiki/)
+![Funtzionamendu egoera](https://apps.yunohost.org/badge/state/tiddlywiki)
+![Mantentze egoera](https://apps.yunohost.org/badge/maintained/tiddlywiki)
 
 [![Instalatu TiddlyWiki YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=tiddlywiki)
 
