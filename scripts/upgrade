@@ -33,7 +33,7 @@ ynh_config_add_nginx
 
 ynh_config_add_systemd
 
-yunohost service add $app --description="Non-linear personal web notebook" --log="/var/log/$app/$app.log"
+yunohost service add $app --description="Non-linear personal Web notebook" --log="/var/log/$app/$app.log"
 
 #=================================================
 # START SYSTEMD SERVICE
