@@ -3,7 +3,7 @@ packaging_format = 2
 id = "tiddlywiki"
 name = "TiddlyWiki"
 description.en = "Non-linear personal web notebook"
-description.fr = "Carnet Web personnel non linéaire"
+description.fr = "Carnet de notes Web personnel et non linéaire"
 
 version = "5.3.6~ynh1"
 
@@ -24,6 +24,7 @@ architectures = "all"
 multi_instance = true
 
 ldap = false
+
 sso = false
 
 disk = "50M"
