@@ -5,7 +5,7 @@ name = "TiddlyWiki"
 description.en = "Non-linear personal web notebook"
 description.fr = "Carnet de notes Web personnel et non linéaire"
 
-version = "5.4.0~ynh1"
+version = "5.4.1~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -50,8 +50,8 @@ ram.runtime = "50M"
 
 [resources]
         [resources.sources.main]
-        url = "https://github.com/Jermolene/TiddlyWiki5/archive/refs/tags/v5.4.0.tar.gz"
-        sha256 = "17f4f3fdf0eeb1e20a9b3b7d759b743c3e89f27ca0a1780bdaa12769a48bcacd"
+        url = "https://github.com/Jermolene/TiddlyWiki5/archive/refs/tags/v5.4.1.tar.gz"
+        sha256 = "993f5ca8cb6265a42fe73358102750e8dbe2069cb727c768f2c3ac8dc5643b64"
         autoupdate.strategy = "latest_github_tag"
 
     [resources.ports]
